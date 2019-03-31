@@ -8,9 +8,9 @@ header{
     color: #ddd;
 }
 .main{
-    width: 80%;
+    width: 90%;
     min-height: 1000px;
-    margin-left: 10%;
+    margin: auto;
 }
 .container{
     display: flex;
@@ -36,6 +36,10 @@ a:hover{
     color: #e74c3c;
 }
 @media only screen and (max-width : 768px){
+    .main{
+        width: 100%;
+        min-height: 1000px;
+    }
     .movie{
         width: 136px;
         height: 196px;
