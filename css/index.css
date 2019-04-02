@@ -13,6 +13,7 @@ header{
     margin: auto;
 }
 .container{
+    display: -webkit-flex;
     display: flex;
     background-color: #ddd;
     justify-content: space-evenly;
