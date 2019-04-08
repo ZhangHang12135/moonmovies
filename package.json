@@ -1,0 +1,22 @@
+{
+  "name": "moonmovies",
+  "version": "0.9.0",
+  "description": "movie wdbsite",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZhangHang12135/moonmovies.git"
+  },
+  "author": "huisha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZhangHang12135/moonmovies/issues"
+  },
+  "homepage": "https://github.com/ZhangHang12135/moonmovies#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}

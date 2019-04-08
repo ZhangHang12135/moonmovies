@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #eee;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+header{
+    height: 45px;
+    background-color:  rgb(76, 180, 231);
+    color: #ddd;
+}
+.main{
+    width: 90%;
+    min-height: 1000px;
+    margin: auto;
+    background-color: #fff;
+}
+
+/*电影分类 始*/
+.sort{
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    background-color: #fff;
+    margin: 0 auto 10px;
+}
+.sort > div{
+    width: 33%;
+}
+.sort dl{
+    border-left: 1px solid #eee;
+    margin: 5px;
+    padding: 5px;
+}
+.sort dt{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #333;
+}
+.sort dd{
+    list-style: none;
+    margin: 3px 0 2px 5px;
+}
+
+/*电影分类 终*/
+/* 电影列表样式 始*/
+.container{
+    display: -webkit-flex;
+    display: flex;
+    background-color: #fff;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.movie{
+    width: 170px;
+    height: 245px;
+    background:transparent;
+    margin: 5px 5px;
+}
+
+.movieName{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+    font-size: 15px;
+}
+a:hover{
+    color: #e74c3c;
+}
+@media only screen and (max-width : 768px){
+    .main{
+        width: 100%;
+        min-height: 1000px;
+    }
+    .movie{
+        width: 136px;
+        height: 196px;
+        background: transparent;
+        margin: 5px 5px;
+    }
+    .sort > div{
+        width: 100%;
+    }
+}
+.moviePoster{
+    width: 100%;
+    height: 90%;
+}
+/*电影列表样式 终*/
+/*分页块*/
+.page{
+    width: 30%;
+    margin: auto;
+}
+
+.pagebtn{
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #ffcc66;
+    margin: 10px 50px;
+    border: 1px solid transparent;
+    border-radius: 4px; 
+}
+.pagebtn:hover{
+    background: #ffff66;
+}
+/*页脚样式*/
+footer{
+    height: 45px;
+    background-color:  #ffcc66;
+    color: #ddd;
+}

@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #eee;
+}
+a{
+    text-decoration: none;
+}
+.main{
+    width: 70%;
+    margin: auto;
+    background-color: #fff;
+}
+h4{
+    padding: 5px 5px;
+    border-top: 1px dashed #aaa;
+}
+.info{
+    display: flex;
+}
+.poster{
+    width: 170px;
+    height: 245px;
+    background: transparent;
+    margin: 5px 5px;
+}
+img{
+    width: 100%;
+    height: 90%;
+}
+.infomation{
+    margin: 5px 0 5px 20px;
+}
+.infomation p,h3{
+    margin-bottom: 10px;
+}
+.infomation  a{
+    color: #1a2b3c;
+}
+.score{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    color: #00ff00;
+}
+.star{
+    color: #ffcc66;
+    margin-right: 10px;
+}
+p > span{
+    margin-right: 10px;
+}
+.playbtn{
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #ffcc66;
+    border: 1px solid transparent;
+    border-radius: 4px; 
+}
+.playbtn:hover{
+    background: #ffff66;
+}
+/*电影简介*/
+.synopsis{
+    margin: 5px 5px;
+    min-height: 100px;
+}
+/*猜你喜欢*/
+.like{
+    margin: 5px 5px;
+}
+.container{
+    display: -webkit-flex;
+    display: flex;
+    background-color: #fff;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.movie{
+    width: 170px;
+    height: 245px;
+    background:transparent;
+    margin: 5px 5px;
+}
+.movieName{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+    font-size: 15px;
+}
+a:hover{
+    color: #e74c3c;
+}
+.moviePoster{
+    width: 100%;
+    height: 90%;
+}
+@media only screen and (max-width : 768px){
+    .main{
+        width: 90%;
+    }
+    .movie{
+        width: 136px;
+        height: 196px;
+        background: transparent;
+        margin: 5px 5px;
+    }
+    img{
+        width: 100%;
+        height: 80%;
+    }
+    .infomation > p{
+        font-size: 14px;
+    }
+    .actors{
+        display: none;
+    }
+}
+@media screen and (max-width:1316px) and (min-width: 1060px),(max-width:768px) and (min-width: 676px){
+    .movie:last-child{
+        display: none;
+    }
+    .movie:nth-last-child(2){
+        display: none;
+    }
+}
+@media screen and (min-width:1317px){
+    .movie:last-child{
+        display: none;
+    }
+}

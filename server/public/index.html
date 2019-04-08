@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="referrer" content="no-referrer">
+    <title>MoonMovies</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" href="../source/ico/ico.png" type="image/x-icon"/>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+   <script src="../js/home.js"></script>
+</head>
+<body>
+    <header>Moon</header>
+    <div class="sort">
+            <div class="type">
+                <dl>
+                    <dt>类型</dt>
+                    <dd><a href="./index.html?type=ethics">伦理</a>
+                    <a href="./index.html?type=comedy">喜剧</a>
+                    <a href="./index.html?type=terror">恐怖</a>
+                    <a href="./index.html?type=action">动作</a>
+                    <a href="./index.html?type=plot">剧情</a>
+                    <a href="./index.html?type=record">纪录</a>
+                    <a href="./index.html/type?type=science">科幻</a>
+                    <a href="./index.html?type=love">爱情</a>
+                    <a href="./index.html?type=animation">动画</a>
+                    <a href="./index.html?type=war">战争</a>
+                    <a href="./index.html?type=horror">惊悚</a>
+                    <a href="./index.html?type=fantasy">奇幻</a>
+                    <a href="./index.html?type=suspense">悬疑</a></dd>
+                </dl>
+        </div>
+            <div class="date">
+                <dl>
+                    <dt>时间</dt>
+                    <dd><a href="./index.html?date=2019">2019</a>
+                    <a href="./index.html?date=2018">2018</a>
+                    <a href="./index.html?date=2017">2017</a>
+                    <a href="./index.html?date=2016">2016</a>
+                    <a href="./index.html?date=2015">2015</a>
+                    <a href="./index.html?date=2014">2014</a>
+                    <a href="./index.html?date=2013">2013</a>
+                    <a href="./index.html?date=2012">2012</a>
+                    <a href="./index.html?date=2010">2010</a>
+                    <a href="./index.html?date=00s">00年代</a>
+                    <a href="./index.html?date=90s">90年代</a>
+                    <a href="./index.html?date=other">其他年代</a>
+                </dl>
+            </div>
+            <div class="area">
+                    <dl>
+                        <dt>地区</dt>
+                        <dd><a href="./index.html?area=dalu">大陆</a>
+                        <a href="./index.html?area=xianggang">香港</a>
+                        <a href="./index.html?area=oumei">欧美</a>
+                        <a href="./index.html?area=hanguo">韩国</a>
+                        <a href="./index.html?area=rb">日本</a>
+                        <a href="./index.html?area=other">其他</a>
+                    </dl>
+            </div>
+        </div>
+    <div class="main">
+        <div class="container"></div>
+        <div class="page">
+            <a href='./index.html?page=1' ><button class="pagebtn">上一页</button></a>
+            <a href='./index.html?page=2' ><button class="pagebtn">下一页</button></a>
+        </div>
+    </div>
+    <footer>H.S</footer>
+    <script>
+     if(!urlStr || pageid == 1){
+            $(".page a").first().attr("href","./index.html?page=1");
+            $(".page a").last().attr("href","./index.html?page=2");
+        }else{
+            $(".page a").first().attr("href",`./index.html?page=${pageid - 1}`);
+            $(".page a").last().attr("href",`./index.html?page=${1 + pageid}`);
+        }
+    </script>
+</body>
+</html>
