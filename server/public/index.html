@@ -13,70 +13,73 @@
 </head>
 <body>
     <header>Moon</header>
-    <div class="sort">
-            <div class="type">
-                <dl>
-                    <dt>类型</dt>
-                    <dd><a href="./index.html?type=ethics">伦理</a>
-                    <a href="./index.html?type=comedy">喜剧</a>
-                    <a href="./index.html?type=terror">恐怖</a>
-                    <a href="./index.html?type=action">动作</a>
-                    <a href="./index.html?type=plot">剧情</a>
-                    <a href="./index.html?type=record">纪录</a>
-                    <a href="./index.html/type?type=science">科幻</a>
-                    <a href="./index.html?type=love">爱情</a>
-                    <a href="./index.html?type=animation">动画</a>
-                    <a href="./index.html?type=war">战争</a>
-                    <a href="./index.html?type=horror">惊悚</a>
-                    <a href="./index.html?type=fantasy">奇幻</a>
-                    <a href="./index.html?type=suspense">悬疑</a></dd>
-                </dl>
-        </div>
-            <div class="date">
-                <dl>
-                    <dt>时间</dt>
-                    <dd><a href="./index.html?date=2019">2019</a>
-                    <a href="./index.html?date=2018">2018</a>
-                    <a href="./index.html?date=2017">2017</a>
-                    <a href="./index.html?date=2016">2016</a>
-                    <a href="./index.html?date=2015">2015</a>
-                    <a href="./index.html?date=2014">2014</a>
-                    <a href="./index.html?date=2013">2013</a>
-                    <a href="./index.html?date=2012">2012</a>
-                    <a href="./index.html?date=2010">2010</a>
-                    <a href="./index.html?date=00s">00年代</a>
-                    <a href="./index.html?date=90s">90年代</a>
-                    <a href="./index.html?date=other">其他年代</a>
-                </dl>
-            </div>
-            <div class="area">
-                    <dl>
-                        <dt>地区</dt>
-                        <dd><a href="./index.html?area=dalu">大陆</a>
-                        <a href="./index.html?area=xianggang">香港</a>
-                        <a href="./index.html?area=oumei">欧美</a>
-                        <a href="./index.html?area=hanguo">韩国</a>
-                        <a href="./index.html?area=rb">日本</a>
-                        <a href="./index.html?area=other">其他</a>
-                    </dl>
-            </div>
-        </div>
+    <div class="sort">    
+        <table>
+            <tr class="type">
+                <td><span>类型</span></td>
+                <td>
+                    <button name ="type" value="all">全部</button>
+                    <button name ="type" value="剧情">剧情</button>
+                    <button name ="type" value="喜剧">喜剧</button>
+                    <button name ="type" value="恐怖">恐怖</button>
+                    <button name ="type" value="动作">动作</button>
+                    <button name ="type" value="纪录">纪录</button>
+                    <button name ="type" value="科幻">科幻</button>
+                    <button name ="type" value="爱情">爱情</button>
+                    <button name ="type" value="动画">动画</button>
+                    <button name ="type" value="战争">战争</button>
+                    <button name ="type" value="惊悚">惊悚</button>
+                    <button name ="type" value="奇幻">奇幻</button>
+                    <button name ="type" value="悬疑">悬疑</button>
+                    <button name ="type" value="伦理">伦理</button>
+                </td>
+            </tr>
+            <tr class="date">
+                <td><span>时间</span></td>
+                <td>
+                    <button name ="date" value="all">全部</button>
+                    <button name ="date" value="2019">2019</button>
+                    <button name ="date" value="2018">2018</button>
+                    <button name ="date" value="2017">2017</button>
+                    <button name ="date" value="2016">2016</button>
+                    <button name ="date" value="2015">2015</button>
+                    <button name ="date" value="2014">2014</button>
+                    <button name ="date" value="2013">2013</button>
+                    <button name ="date" value="2012">2012</button>
+                    <button name ="date" value="2011">2011</button>
+                    <button name ="date" value="2010">2010</button>
+                    <button name ="date" value="2000">00年代</button>
+                    <button name ="date" value="1900">90年代</button>
+                    <button name ="date" value="other">其他</button>
+                </td>
+            </tr>
+            <tr class="area">
+                <td><span>地区</span></td>
+                <td>
+                    <button name ="area" value="all">全部</button>
+                    <button name ="area" value="大陆">大陆</button>
+                    <button name ="area" value="香港">香港</button>
+                    <button name ="area" value="台湾">台湾</button>
+                    <button name ="area" value="欧美">欧美</button>
+                    <button name ="area" value="法国">法国</button>
+                    <button name ="area" value="泰国">泰国</button>
+                    <button name ="area" value="加拿大">加拿大</button>
+                    <button name ="area" value="印度">印度</button>
+                    <button name ="area" value="日本">日本</button>
+                    <button name ="area" value="韩国">韩国</button>
+                    <button name ="area" value="other">其它</button>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="main">
         <div class="container"></div>
         <div class="page">
-            <a href='./index.html?page=1' ><button class="pagebtn">上一页</button></a>
-            <a href='./index.html?page=2' ><button class="pagebtn">下一页</button></a>
+            <a href='./index.html?page=1'><button class="pagebtn">上一页</button></a>
+            <a href='./index.html?page=2'><button class="pagebtn">下一页</button></a>
         </div>
     </div>
     <footer>H.S</footer>
-    <script>
-     if(!urlStr || pageid == 1){
-            $(".page a").first().attr("href","./index.html?page=1");
-            $(".page a").last().attr("href","./index.html?page=2");
-        }else{
-            $(".page a").first().attr("href",`./index.html?page=${pageid - 1}`);
-            $(".page a").last().attr("href",`./index.html?page=${1 + pageid}`);
-        }
-    </script>
+    <script src="../js/sortAndpage.js"></script>
 </body>
 </html>
