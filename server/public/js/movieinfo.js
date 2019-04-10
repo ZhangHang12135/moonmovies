@@ -7,6 +7,9 @@ $.ajax({
         if(data.movie[0] == null ){
             window.location.href = "./404.html"
         }
+        //将信息存储在浏览器的单个页面上
+        sessionStorage.movieinfo = JSON.stringify(data.movie[0]);
+
         let score =  data.movie[0].movieScore;
         let rate = Math.round(score/2);
         $("title").append( "--"+ data.movie[0].movieName);
@@ -24,7 +27,7 @@ $.ajax({
     </p>
     <p class="actors">主演：<a href="#">${data.movie[0].movieActors}</a></p>
     <p class="director">导演：<a href="#">${data.movie[0].movieDirector}</a></p>
-    <a href="./movieplay.html?id=23"><button class="playbtn">立即播放</button></a>
+    <a href="./movieplay.html?id=${data.movie[0].id}"><button class="playbtn">立即播放</button></a>
 </div>
 </div>
 <div class="synopsis">

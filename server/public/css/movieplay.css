@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #eee;
+}
+header{
+    height: 45px;
+    background-color:  rgb(76, 180, 231);
+    color: #333333;
+}
+.main{
+    width: 80%;
+    margin: 5px auto;
+    background-color: #fff;
+}
+.play,.info{
+    width: 80%;
+    margin: 5px auto;
+}
+.play{
+    border:1px solid #333333;
+}
+span{
+    color: #1a2b3c;
+    margin: 5px 10px 0 0;
+}
+a{
+    text-decoration: none;
+    color: #999;
+}
+a:hover{
+    color: #e74c3c;
+}
+iframe{
+    width: 100%;
+    height: 500px;
+}
+@media only screen and (max-width:768px){
+    .main{
+        width: 95%;
+        height: 500px;
+    }
+    iframe{
+        height: 200px;
+    }
+}

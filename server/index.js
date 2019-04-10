@@ -26,6 +26,11 @@ app.get('/movieinfo', async (req,res)=>{
     }
 
 });
+app.get('/movieplay',async (req,res)=>{
+    let id = req.query.id;
+    const reslut = await mysql.selectList("id,movieName,movieType,movieDate,movieUrl",`where id = ${id}`);
+    res.json({movie:reslut});
+});
 
 app.listen(8081,function(){
     console.log("http://127.0.0.1:8081");

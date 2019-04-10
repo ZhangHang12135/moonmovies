@@ -1,8 +1,8 @@
-if(!urlStr || pageid == 1){
+if(!urlStr){
     $(".page a").first().attr("href","./index.html?type=all&date=all&area=all&page=1");
     $(".page a").last().attr("href","./index.html?type=all&date=all&area=all&page=2");
 }else{
-    $(".page a").first().attr("href",`./index.html${urlSort}page=${pageid - 1}`);
+    $(".page a").first().attr("href",`./index.html${urlSort}page=${!(pageid - 1)?1:pageid-1}`);
     $(".page a").last().attr("href",`./index.html${urlSort}page=${1 + pageid}`);
 }
 

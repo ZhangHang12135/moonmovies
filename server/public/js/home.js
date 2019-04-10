@@ -8,10 +8,13 @@ $.ajax({
     success(data) {
         let moviesNum = data.movies.length;
         $(".container").html("");
+        if(moviesNum == 0){
+            $(".container").html("<h4>暂时没有啦<h4>");
+        }
         for(let value of data.movies){
             $(".container").append(`<div class="movie">
-        <a href="./html/movieinfo.html?id=${value.id}"><img class="moviePoster" src="${value.moviePosterUrl}"></a>
-        <a href="./html/movieinfo.html?id=${value.id}" class="movieName">${value.movieName}</a>
+        <a href="./html/movieinfo.html?id=${value.id}" target="_blank"><img class="moviePoster" src="${value.moviePosterUrl}"></a>
+        <a href="./html/movieinfo.html?id=${value.id}" class="movieName" target="_blank">${value.movieName}</a>
     </div>`);
         }
         if(moviesNum % 6 !== 0){
